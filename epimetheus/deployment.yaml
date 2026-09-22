@@ -23,7 +23,7 @@ metadata:
   labels:
     app: epimetheus
 spec:
-  replicas: 3
+  replicas: 4
 
   selector:
     matchLabels:
@@ -86,8 +86,8 @@ spec:
               cpu: "300m"
               memory: "64Mi"
             limits:
-              cpu: "490m"
-              memory: "120Mi"
+              cpu: "360m"
+              memory: "90Mi"
 
           # Is the process alive? A failing liveness probe restarts the pod.
           livenessProbe:
