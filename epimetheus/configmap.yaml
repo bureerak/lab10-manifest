@@ -23,7 +23,7 @@ data:
   #
   # Every pod opens its own pool, so the total number of connections your
   # deployment asks the database for is this value times your replica count.
-  DB_POOL_SIZE: "24"
+  DB_POOL_SIZE: "20"
 
   # Keep the customer table in memory instead of querying it per request.
   # "true" or "false".
@@ -32,7 +32,7 @@ data:
   # Maximum number of orders held in the in-memory order cache.
   # 0 disables the cache entirely. There is no "unlimited" — a number is a
   # number, and the size you choose is a decision you are making about memory.
-  CACHE_ORDERS_MAX: "1000"
+  CACHE_ORDERS_MAX: "0"
 
   # ---- Fixed. Visible so you know they exist; do not change them ---------
 
